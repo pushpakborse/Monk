@@ -1,0 +1,48 @@
+.monk-mode-container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  text-align: center;
+}
+
+.monk-mode-text {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  margin: 0;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+
+.monk-mode-text:hover {
+  color: #ffff00;
+  text-shadow: 0 0 40px rgba(255, 255, 0, 0.8), 0 0 80px rgba(255, 255, 0, 0.4);
+  transform: scale(1.05);
+  letter-spacing: 3px;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .monk-mode-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .monk-mode-text {
+    font-size: 1.8rem;
+  }
+}

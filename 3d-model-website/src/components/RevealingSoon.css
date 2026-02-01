@@ -1,0 +1,36 @@
+.revealing-soon-container {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  text-align: center;
+}
+
+.revealing-soon-text {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.revealing-soon-text:hover {
+  color: #ffff00;
+  text-shadow: 0 0 30px rgba(255, 255, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .revealing-soon-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .revealing-soon-text {
+    font-size: 1rem;
+  }
+}
